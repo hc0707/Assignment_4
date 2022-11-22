@@ -13,9 +13,8 @@ public class Assignment4_2 {
 
         //---------Logic--------------//
         //Creating an empty array
-        char[] next = new char[dup.length()];
-        int k=0;
-
+        
+        System.out.println("Following are the duplicates present in string "+dup+":");
         for (int i = 0; i < old.length; i++) {
             //to chech if the particular elment is already present before
             int j;
@@ -25,17 +24,12 @@ public class Assignment4_2 {
                 }
             }
 
-            //if it is present then add it to the new array
+            //Printing the duplicate characters
             if(j!=i)
-            next[k++]=old[i];
+            System.out.println(old[i]);
         }
 
-        //converting new array into string and print the Output
-        StringBuffer sb = new StringBuffer(next.length);
-        for (char c : next) {
-            sb.append(c);
-        }
-        System.out.println(sb);
+        //Printing the duplicate characters
         
     }
              
